@@ -1,0 +1,47 @@
+.counter-page {
+  * {
+    font-family: "Roboto";
+    color: #000;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 18px;
+  }
+
+  .container {
+    text-align: center;
+    max-width: 250px;
+  }
+  h1 {
+    margin-top: 20px;
+    font-family: "Roboto";
+
+    font-size: 24px;
+  }
+  .button {
+    background-color: #75bdff;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+
+    line-height: 0%;
+  }
+  .count {
+    margin: auto 0;
+  }
+
+  .line {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .button_reset {
+    width: 87px;
+    height: 34px;
+    background: #75bdff;
+    border-radius: 9px;
+    border: 1px solid #75bdff;
+    color: #fff;
+  }
+}
