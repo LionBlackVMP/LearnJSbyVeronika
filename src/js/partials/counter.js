@@ -37,20 +37,25 @@ let buttonSubtractionSecondLine = document.querySelector(
 
 let secondResult = JSON.parse(localStorage.getItem("numberSecondLine") || 0);
 buttonAdditionSecondLine.addEventListener("click", function () {
-  let result = ++secondResult;
+  setTimeout(function () {
+    let result = ++secondResult;
 
-  document.getElementById("countSecond").innerHTML = result;
-  numberSecondLine.splice(0, 1, result);
-  localStorage.setItem("numberSecondLine", JSON.stringify(numberSecondLine));
+    document.getElementById("countSecond").innerHTML = result;
+    numberSecondLine.splice(0, 1, result);
+    localStorage.setItem("numberSecondLine", JSON.stringify(numberSecondLine));
+  }, 1000);
 });
 
 buttonSubtractionSecondLine.addEventListener("click", function () {
-  let result = --secondResult;
+  setTimeout(function () {
+    let result = --secondResult;
 
-  document.getElementById("countSecond").innerHTML = result;
-  numberSecondLine.splice(0, 1, result);
-  localStorage.setItem("numberSecondLine", JSON.stringify(numberSecondLine));
+    document.getElementById("countSecond").innerHTML = result;
+    numberSecondLine.splice(0, 1, result);
+    localStorage.setItem("numberSecondLine", JSON.stringify(numberSecondLine));
+  }, 1000);
 });
+
 let reset = document.querySelector(".button_reset");
 
 reset.addEventListener("click", function () {
@@ -74,8 +79,3 @@ if (JSON.parse(localStorage.getItem("numberSecondLine"))) {
     localStorage.getItem("numberSecondLine")
   );
 }
-
-// function saveNumber() {
-//   number.push(buttonAdditionFirstLine.value);
-//   localStorage.setItem("number", JSON.stringify(number));
-// }
