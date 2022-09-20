@@ -44,4 +44,21 @@
     border: 1px solid #75bdff;
     color: #fff;
   }
+  .button:hover,
+  .button_reset:hover {
+    background: #3f90dc;
+
+    transition: 200ms;
+  }
+  .button:active {
+    color: #555;
+    transition: 200ms;
+    border: 1px solid #555;
+  }
+
+  .button_reset:active {
+    color: #fff;
+    transition: 200ms;
+    border: 1px solid #fff;
+  }
 }
