@@ -1,2 +1,91 @@
 .to-do-page {
+  body {
+    background-color: forestgreen;
+  }
+  .container {
+    h1 {
+      font-weight: 400;
+    }
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    max-width: $bp-xs;
+    border: 2px solid black;
+    border-radius: 10px;
+    li {
+      list-style-type: none;
+    }
+    ul {
+      padding-left: 0;
+    }
+    .button {
+      background-color: $color-btn;
+      color: #ffffff;
+      border: 1px solid black;
+      width: 90px;
+      height: 30px;
+      margin: 10px 5px;
+    }
+    .button_reset {
+      width: 87px;
+      height: 34px;
+
+      border-radius: 9px;
+      border: 1px solid $color-btn;
+      color: #fff;
+    }
+    .button:hover,
+    .button_reset:hover {
+      background: #3f90dc;
+
+      transition: 200ms;
+    }
+    .button:active {
+      color: #555;
+      transition: 200ms;
+      border: 1px solid #555;
+    }
+
+    .button_reset:active {
+      color: #fff;
+      transition: 200ms;
+      border: 1px solid #fff;
+    }
+    #task {
+      width: 200px;
+      height: 30px;
+      border-radius: 5px;
+    }
+    .taskList {
+      margin: 10px 0;
+    }
+    .delete {
+      position: relative;
+      padding: 5px;
+      width: 20px;
+      height: 20px;
+    }
+
+    .delete:before,
+    .delete:after {
+      position: absolute;
+      left: 15px;
+      content: "";
+
+      height: 20px;
+      width: 2px;
+      background-color: #cc0000;
+    }
+    .delete:before {
+      transform: rotate(45deg);
+    }
+    .delete:after {
+      transform: rotate(-45deg);
+    }
+    .delete:hover:before,
+    .delete:hover:after {
+      background-color: #700000;
+      transition: 200ms;
+    }
+  }
 }
