@@ -30,7 +30,7 @@ if (isToDoPage) {
       label.appendChild(button);
 
       button.className = "delete";
-
+      text.className = "text";
       text.innerHTML = item.value;
       label.className = "label";
       taskBar.appendChild(li);
